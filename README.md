@@ -33,6 +33,14 @@ and mariadb container.
 sudo docker-compose up -d
 ```
 
+
+### Increase PHP memory limit
+Increase the limit in your php.ini file /etc/php/7.3/cli/php.ini:
+```
+; Use -1 for unlimited or define an explicit value like 2G
+memory_limit = -1
+```
+
 ### SSH into the container (password: secret):
 ```shell
 ssh -p 2222 homestead@localhost
@@ -62,14 +70,4 @@ DB_HOST=mysql
 DB_PORT=3306
 DB_USERNAME=root
 DB_PASSWORD=
-```
-
-
-php -r "echo ini_get('memory_limit').PHP_EOL;"
-
-### Increase PHP memory limit
-Increase the limit in your php.ini file /etc/php/7.3/cli/php.ini:
-```
-; Use -1 for unlimited or define an explicit value like 2G
-memory_limit = -1
 ```
