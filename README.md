@@ -67,8 +67,9 @@ DB_PASSWORD=
 
 php -r "echo ini_get('memory_limit').PHP_EOL;"
 
-
-Try increasing the limit in your php.ini file /etc/php/7.3/cli/php.ini:
-
+### Increase PHP memory limit
+Increase the limit in your php.ini file /etc/php/7.3/cli/php.ini:
+```
 ; Use -1 for unlimited or define an explicit value like 2G
 memory_limit = -1
+```
