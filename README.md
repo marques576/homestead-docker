@@ -54,6 +54,10 @@ cd /
 sudo ./serve.sh myapp.dev /apps/myapp/public
 sudo supervisorctl restart all
 ```
+### Upgrade composer to version 2 (optional)
+```
+sudo composer self-update --stable
+```
 
 **In the host**, update ``` /etc/hosts ``` to include your app domain:
 ```shell
@@ -71,3 +75,5 @@ DB_PORT=3306
 DB_USERNAME=root
 DB_PASSWORD=
 ```
+
+
