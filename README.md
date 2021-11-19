@@ -54,14 +54,15 @@ cd /
 sudo ./serve.sh myapp.dev /apps/myapp/public
 sudo supervisorctl restart all
 ```
-### Upgrade composer to version 2 (optional)
-```
-sudo composer self-update --stable
-```
 
 **In the host**, update ``` /etc/hosts ``` to include your app domain:
 ```shell
 127.0.0.1               myapp.dev
+```
+
+### Upgrade composer to version 2 (optional)
+```
+sudo composer self-update --stable
 ```
 
 ### That's it
