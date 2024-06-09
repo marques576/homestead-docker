@@ -21,7 +21,7 @@ docker pull shincoder/homestead:php7.3
 
 ### Clone && Edit docker-compose.yml
 ```shell
-git clone https://github.com/shincoder/homestead-docker.git
+git clone https://github.com/marques576/homestead-docker.git
 ```
 rename ```docker-compose.dist.yml``` to ```docker-compose.yml``` then edit the file with you own
 paths and ports.
